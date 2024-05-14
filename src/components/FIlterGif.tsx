@@ -1,4 +1,3 @@
-import React from 'react'
 import { useGiftContext } from '../context/gif-context';
 import { HiMiniArrowTrendingUp } from 'react-icons/hi2';
 
@@ -23,7 +22,7 @@ const FIlterGif = ({alignLeft=false,showTrending=false}) => {
         </span>
       )}
       <div className='text-white flex min-w-80 rounded-full bg-gray-800'>
-        {filters.map((f:any,index:number)=>(
+        {filters.map((f:any)=>(
             <span onClick={()=>{setFilter(f.value)}} className={`${filter===f.value?f.background:''} font-semibold py-2 w-1/3 text-center rounded-full cursor-pointer`}>{f.title}</span>
         ))}
       </div>

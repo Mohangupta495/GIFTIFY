@@ -2,6 +2,7 @@ import { Link } from "react-router-dom"
 
 const Gif = ({gif,hover=true}:any) => {
     console.log(gif);
+    console.log(hover);
   return (
     <Link to={`/${gif.type}/${gif.slug}`}>
     <div className="w-full mb-2 relative cursor-pointer text-white">

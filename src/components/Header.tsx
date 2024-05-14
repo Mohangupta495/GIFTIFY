@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom';
 import logo from "../assets/logo.png"
 import { HiEllipsisVertical, HiMiniBars3BottomRight } from 'react-icons/hi2';
@@ -10,7 +10,7 @@ const Header = () => {
   const [category, setCategory] = useState([]);
   const [showCategory, setShowCategory] = useState(false);
 
-  const {gf,gifs,setGifs,filter,setFavorites,favorites,setFilter}=useGiftContext();
+  const {gf,favorites}=useGiftContext();
 
   const fetchGifCategories=async()=>{
     const {data}=await gf.categories();
